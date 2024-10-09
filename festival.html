@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSA Film Festival</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Courier New', monospace;
+        }
+        .stacked-box {
+            position: relative;
+            background: white;
+            border: 1px solid #000;
+            box-shadow: 5px 5px 0 #fff, 5px 5px 0 1px #000,
+                        10px 10px 0 #fff, 10px 10px 0 1px #000;
+        }
+        .letter-stack {
+            position: relative;
+            display: inline-block;
+            height: 200px;
+            margin-right: 20px;
+        }
+        .stacked-letter {
+            position: absolute;
+            font-size: 180px;
+            font-weight: bold;
+            line-height: 1;
+            -webkit-text-stroke: 1.3px black;
+        }
+        .box-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .box-text {
+          font-size: 0.8rem;
+          margin: 0.8rem;
+          text-align: justify;
+        }
+        .content-box {
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .content-box:hover {
+            transform: translateY(-5px);
+        }
+       .title {
+            width: 325px;
+            height: 375px;
+            margin-bottom: 1.5rem;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .title:hover {
+            transform: translateY(-5px);
+        }
+        .box-img {
+            width: 95%;
+            height: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="max-w-4xl mx-auto">
+        <!-- Title section with fixed height -->
+            <div class="title">
+                <!-- C stack -->
+                <div class="letter-stack" style="top: 0; left: 0; z-index: 1;">
+                    <div class="stacked-letter" style="top: 0px; color:  #FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 5px; color: #FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 10px; color:#FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 15px; color:#FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 20px; color:#FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 25px; color:#FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 30px; color:#FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 35px; color:#FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 40px; color:#FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 45px; color:#FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 50px; color:#FFFFFF">cinema</div>
+                    <div class="stacked-letter" style="left: 55px; color:#FFD700">cinema</div>
+                </div>
+                <!-- S stack -->
+                <div class="letter-stack" style="top: 95px; left: 55px; z-index: 2;">
+                    <div class="stacked-letter" style="top: 0px; color:   #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 5px; color:  #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 10px; color: #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 15px; color: #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 20px; color: #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 25px; color: #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 30px; color: #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 35px; color: #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 40px; color: #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 45px; color: #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 50px; color: #FFFFFF">st</div>
+                    <div class="stacked-letter" style="left: 55px; color: #FFD700">st</div>
+                </div>
+                <!-- A stack -->
+                <div class="letter-stack" style="top: 185px; left: 100px; z-index: 3;">
+                    <div class="stacked-letter" style="left: 15px; color:#FFFFFF">agustí</div>
+                    <div class="stacked-letter" style="left: 20px; color:#FFFFFF">agustí</div>
+                    <div class="stacked-letter" style="left: 25px; color:#FFFFFF">agustí</div>
+                    <div class="stacked-letter" style="left: 30px; color:#FFFFFF">agustí</div>
+                    <div class="stacked-letter" style="left: 35px; color:#FFFFFF">agustí</div>
+                    <div class="stacked-letter" style="left: 40px; color:#FFFFFF">agustí</div>
+                    <div class="stacked-letter" style="left: 45px; color:#FFFFFF">agustí</div>
+                    <div class="stacked-letter" style="left: 50px; color:#FFFFFF">agustí</div>
+                    <div class="stacked-letter" style="left: 55px; color:#FFD700">agustí</div>
+                </div>
+            </div>
+
+        <div class="content-box stacked-box">
+          <div class="grid grid-cols-3 gap-2 p-4">
+            <!-- Left column -->
+            <div>
+                <img class="box-img" style="max-width: 200px;" src="./title.jpg" alt="title">
+            </div>
+            <!-- Middle column -->
+            <div>
+                <div class="box-text">
+                  Cinema St. Agustí is located in the heart of Gracia, with a focus on
+                  independent and international cinema.
+                  <br>
+                  All movies are shown in their original language and in the open air,
+                  with a view of Tibidabo and the Sagrada Familia: firmly grounded in
+                  Barcelona, with a vision of the world.
+                </div>
+            </div>
+            <!-- Right column -->
+            <div>
+                <img class="box-img" style="max-width: 200px;" src="./sagrada.jpg" alt="title">
+            </div>
+          </div>
+        </div>
+        <!-- Content grid -->
+        <div class="grid grid-cols-2 gap-8">
+            <!-- Left column -->
+            <div>
+                <div class="content-box stacked-box">
+                    <div class="p-4">
+                        <div class="box-title"> + PERSONAL CANON </div>
+                        <img class="box-img" src="./sunrise.jpg" alt="sunrise">
+                        <div class="box-text">
+                        Is it possible to define a general cinematic canon? At Cinema
+                        St. Agustí, we believe that the only canon which means anything
+                        at all is the personal one. This series is a monthly event where
+                        we invite a CSA employee to present a movie that has shaped
+                        their understanding of cinema (and life!). 
+                        <br>
+                        Stop discussing what should be important to <i>everyone</i> and
+                        start discussing what's important to <i>you</i>.
+                        <br><br>
+                        <b>Movies:</b> Before Sunrise, Eternal Sunshine of the Spotless
+                        Mind, Perfect Days and many more.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box stacked-box">
+                    <div class="p-4">
+                        <div class="box-title">+ BELGIAN CLASSICS</div>
+                        <img class="box-img" src="./jeane.jpeg" alt="Belgian Classics">
+                        <div class="text-sm">< Jeanne Dielman, Quai ></div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <!-- Right column -->
+            <div class="mt-20">
+                <div class="content-box stacked-box">
+                    <div class="p-4">
+                        <div class="box-title">+ BARCELONA</div>
+                        <img class="box-img" src="./madre.jpg" alt="Romance">
+                        <div class="text-sm">< Todo Sobre Mi Madre ></div>
+                    </div>
+                </div>
+                <div class="content-box stacked-box">
+                    <div class="p-4">
+                        <div class="box-title">+ HITCHCOCK</div>
+                        <img class="box-img" src="./window.jpg" alt="Romance">
+                        <div class="box-text">
+                          We love Hitchcock! This series is dedicated to the master of
+                          suspense. Every month we screen a different movie from his
+                          extensive filmography. 
+                          </br>
+                          </br>
+                          <b>Movies:</b> Rear Window, Vertigo, Psycho, North by
+                          Northwest, and many more.
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
